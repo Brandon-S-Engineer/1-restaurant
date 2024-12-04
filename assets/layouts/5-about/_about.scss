@@ -1,0 +1,124 @@
+.about {
+  .container {
+    display: grid;
+    gap: 120px;
+  }
+
+  .section-text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    margin-inline: auto;
+    margin-top: 26px;
+  }
+
+  .about-banner {
+    position: relative;
+    margin-bottom: 120px;
+
+    > .w-100 {
+      padding-left: 50px;
+    }
+
+    .abs-img {
+      position: absolute;
+
+      &::before {
+        z-index: -1;
+      }
+    }
+
+    .abs-img-1 {
+      width: 285px;
+
+      bottom: -120px;
+      left: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      &::before {
+        background-image: url('../images/img-pattern.svg');
+        background-repeat: no-repeat;
+        width: 140px;
+
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 140px;
+      }
+    }
+
+    .abs-img-2 {
+      top: -65px;
+      right: 0;
+      overflow: hidden;
+
+      &::before {
+        inset: 0;
+        background-image: url('../images/badge-2-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: rotate360 15s linear infinite;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Meida Queries                               */
+/* -------------------------------------------------------------------------- */
+@media only screen and (min-width: 575px) {
+  .about {
+    .container {
+      gap: 80px;
+    }
+
+    .about-banner > .w-100 {
+      padding-left: 90px;
+    }
+
+    .contact-number {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about {
+    .container {
+      grid-template-columns: 0.7fr 1fr;
+    }
+
+    .about-banner {
+      padding-left: 0;
+
+      .w-100 {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about {
+    .about-content {
+      padding-right: 90px;
+    }
+
+    .shape {
+      display: block;
+      top: 46px;
+      left: 0;
+    }
+  }
+}

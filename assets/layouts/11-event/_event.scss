@@ -1,0 +1,61 @@
+.event {
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    margin-inline: auto;
+    margin-top: 40px;
+  }
+
+  .event-card {
+    position: relative;
+    overflow: hidden;
+
+    .card-content {
+      background-image: $gradient-1;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 35px 35px 25px;
+    }
+
+    .publish-date {
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      padding: 5px 10px;
+      color: $gold-crayola;
+      background-color: $black;
+      font-weight: $weight-bold;
+      letter-spacing: $letterSpacing-1;
+      line-height: 14px;
+    }
+
+    .card-subtitle {
+      color: $gold-crayola;
+      text-transform: uppercase;
+      font-weight: $weight-bold;
+      letter-spacing: $letterSpacing-2;
+      margin-bottom: 5px;
+    }
+
+    .card-banner .img-cover {
+      transition: $transition-2;
+    }
+
+    &:is(:hover, :focus-within) .img-cover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+.event {
+  .container {
+    min-width: 420px;
+    margin-inline: auto;
+  }
+}

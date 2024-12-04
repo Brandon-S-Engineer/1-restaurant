@@ -1,0 +1,94 @@
+.reservation {
+  .reservation-form {
+    margin-top: -270px;
+  }
+
+  .form-text {
+    margin-bottom: 40px;
+
+    .link {
+      display: inline;
+      color: $gold-crayola;
+    }
+  }
+
+  .input-field[type='date'] {
+    text-transform: uppercase;
+    padding-right: 10px;
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+  }
+
+  textarea.input-field {
+    resize: none;
+    height: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: $lineHeight-1;
+  }
+
+  .form-left,
+  .form-right {
+    padding: 40px 20px 30px;
+  }
+
+  .form-left {
+    .btn {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .form-right {
+    background-repeat: repeat;
+    background-position: top left;
+
+    .headline-1 {
+      margin-bottom: 40px;
+    }
+
+    .contact-label {
+      margin-bottom: 5px;
+    }
+
+    .separator {
+      margin: 20px auto;
+    }
+
+    .body-4 {
+      color: $quick-silver;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .reservation {
+    .input-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+
+      &:nth-child(4) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .reservation {
+    .reservation-form {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.testi {
+  padding-bottom: 340px;
+  position: static;
+
+  .quote {
+    font-size: 7rem;
+    font-family: $fontFamily-forum;
+    line-height: 0.7em;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .separator {
+      animation: rotate360 15s linear infinite;
+    }
+  }
+
+  .profile .img {
+    margin-inline: auto;
+    border-radius: $radius-circle;
+    margin-bottom: 15px;
+  }
+
+  .profile-name {
+    color: $gold-crayola;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    letter-spacing: $letterSpacing-3;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
+  .testi {
+    .testi-text {
+      max-width: 910px;
+      margin-inline: auto;
+    }
+  }
+}

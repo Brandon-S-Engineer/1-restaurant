@@ -1,0 +1,85 @@
+/* -------------------------------- Variables ------------------------------- */
+@import '../colors/colors';
+@import '../utils/variables';
+
+/* --------------------------------- Mixins --------------------------------- */
+// @import '../utils/mixins';
+
+/* ----------------------------- Reset/Normalize ---------------------------- */
+/* ---------------------------------- Base ---------------------------------- */
+@import '../base/reset';
+@import '../base/typography';
+@import '../base/general-styles';
+
+/* --------------------------------- Layouts -------------------------------- */
+@import '../layouts/0-preload/preload';
+@import '../layouts/1-topbar/topbar';
+@import '../layouts/2-header/header';
+@import '../layouts/3-hero/hero';
+@import '../layouts/4-service/service';
+@import '../layouts/5-about/about';
+@import '../layouts/6-dish/dish';
+@import '../layouts/7-menu/menu';
+@import '../layouts/8-testimonials/testimonials';
+@import '../layouts/9-reservation/reservation';
+@import '../layouts/10-features/features';
+@import '../layouts/11-event/event';
+@import '../layouts/12-footer/footer';
+
+/* ------------------------------- Components ------------------------------- */
+// @import '../components/buttons';
+// @import '../components/cards';
+// @import '../components/cta';
+
+/* -------------------------------------------------------------------------- */
+/*                                   Others                                   */
+/* -------------------------------------------------------------------------- */
+/* --------------------------------- Overlay -------------------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: $black-alpha-80;
+  opacity: 0;
+  transition: $transition-2;
+  z-index: 1;
+  pointer-events: none; // Deny page clicks
+
+  &.active {
+    opacity: 1;
+    pointer-events: all; // Allow to click it for the event
+  }
+}
+
+/* ------------------------------- Back to Top ------------------------------ */
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--gold-crayola);
+  color: var(--smoky-black-1);
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-circle);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:is(:hover, :focus-visible) {
+    background-color: var(--white);
+    color: var(--gold-crayola);
+  }
+}

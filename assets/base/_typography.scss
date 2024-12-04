@@ -1,0 +1,123 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+/* font-family */
+$fontFamily-forum: 'Forum', cursive;
+$fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+// Font size (assuming 1rem = 16px)
+$fontSize-display-1: calc(20.8px + 6.7vw); // 1.3rem + 6.7vw
+$fontSize-headline-1: calc(32px + 2.5vw); // 2rem + 2.5vw
+$fontSize-headline-2: calc(20.8px + 2.4vw); // 1.3rem + 2.4vw
+$fontSize-title-1: calc(25.6px + 1.2vw); // 1.6rem + 1.2vw
+$fontSize-title-2: 35.2px; // 2.2rem
+$fontSize-title-3: 33.6px; // 2.1rem
+$fontSize-title-4: calc(25.6px + 1.2vw); // 1.6rem + 1.2vw
+$fontSize-body-1: 38.4px; // 2.4rem
+$fontSize-body-2: 25.6px; // 1.6rem
+$fontSize-body-3: 28.8px; // 1.8rem
+$fontSize-body-4: 25.6px; // 1.6rem
+$fontSize-label-1: 22.4px; // 1.4rem
+$fontSize-label-2: 19.2px; // 1.2rem
+
+// Font weight
+$weight-regular: 400;
+$weight-bold: 700;
+
+// Line height
+$lineHeight-1: 1em;
+$lineHeight-2: 1.2em;
+$lineHeight-3: 1.5em;
+$lineHeight-4: 1.6em;
+$lineHeight-5: 1.85em;
+$lineHeight-6: 1.4em;
+
+// Letter spacing
+$letterSpacing-1: 0.15em;
+$letterSpacing-2: 0.4em;
+$letterSpacing-3: 0.2em;
+$letterSpacing-4: 0.3em;
+$letterSpacing-5: 3px;
+
+/* ------------------------------ Typography 2 ------------------------------ */
+
+.display-1,
+.headline-1,
+.headline-2,
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  color: $white;
+  font-family: $fontFamily-forum;
+  font-weight: $weight-regular;
+  line-height: $lineHeight-2;
+}
+
+.display-1 {
+  font-size: $fontSize-display-1;
+  line-height: $lineHeight-1;
+}
+
+.headline-1 {
+  font-size: $fontSize-headline-1;
+}
+
+.headline-2 {
+  font-size: $fontSize-headline-2;
+  line-height: $lineHeight-6;
+}
+
+.title-1 {
+  font-size: $fontSize-title-1;
+}
+
+.title-2 {
+  font-size: $fontSize-title-2;
+}
+
+.title-3 {
+  font-size: $fontSize-title-3;
+}
+
+.title-4 {
+  font-size: $fontSize-title-4;
+}
+
+.body-1 {
+  font-size: $fontSize-body-1;
+  line-height: $lineHeight-6;
+}
+
+.body-2 {
+  font-size: $fontSize-body-2;
+  line-height: $lineHeight-4;
+}
+
+.body-3 {
+  font-size: $fontSize-body-3;
+}
+
+.body-4 {
+  font-size: $fontSize-body-4;
+}
+
+.label-1 {
+  font-size: $fontSize-label-1;
+}
+
+.label-2 {
+  font-size: $fontSize-label-2;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 575px) {
+  $fontSize-body-2: 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  $fontSize-title-2: 2.5rem;
+}
