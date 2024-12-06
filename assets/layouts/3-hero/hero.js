@@ -5,10 +5,6 @@ const heroSliderItems = document.querySelectorAll('.slider-item');
 const heroSliderPrevBtn = document.querySelector('.prev');
 const heroSliderNextBtn = document.querySelector('.next');
 
-// const heroSliderItems = document.querySelectorAll('[data-hero-slider-item]');
-// const heroSliderPrevBtn = document.querySelector('[data-prev-btn]');
-// const heroSliderNextBtn = document.querySelector('[data-next-btn]');
-
 let currentSlidePos = 0;
 let lastActiveSliderItem = heroSliderItems[0];
 
