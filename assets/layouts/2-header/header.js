@@ -23,7 +23,6 @@ addEventOnElements(navTogglers, 'click', toggleNavbar);
 /* -------------------------------------------------------------------------- */
 /*                          Header & Back to top BTN                          */
 /* -------------------------------------------------------------------------- */
-//! Understand
 const header = document.querySelector('.header');
 // const backToBtn = document.querySelector('[data-back-top-btn]');
 const backToBtn = document.querySelector('.back-top-btn');
