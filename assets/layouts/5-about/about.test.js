@@ -6,20 +6,20 @@ describe('Parallax Effect', () => {
   let parallaxItems;
 
   beforeEach(() => {
-    // Set up DOM with mock elements
+    // Set up DOM first
     document.body.innerHTML = `
-      <div data-parallax-item data-parallax-speed="1.5"></div>
-      <div data-parallax-item data-parallax-speed="2.0"></div>
-    `;
+  <div data-parallax-item data-parallax-speed="1.5"></div>
+  <div data-parallax-item data-parallax-speed="2.0"></div>
+`;
 
+    // Select elements now that the DOM is populated
     parallaxItems = document.querySelectorAll('[data-parallax-item]');
 
     // Mock window dimensions
     Object.defineProperty(window, 'innerWidth', { value: 1024, writable: true });
     Object.defineProperty(window, 'innerHeight', { value: 768, writable: true });
-
     // Load the script
-    require('../../path-to-your-parallax-script'); // Adjust the path
+    require('./about'); // Adjust the path
   });
 
   test('Mousemove event applies transform styles', () => {
