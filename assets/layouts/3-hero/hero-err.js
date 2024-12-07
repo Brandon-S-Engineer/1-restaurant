@@ -8,9 +8,6 @@ describe('Hero Slider Functionality', () => {
   let heroSliderItems, prevBtn, nextBtn, autoSlideInterval;
 
   beforeEach(() => {
-    //? Use fake timers before setting up intervals
-    jest.useFakeTimers();
-
     // Mock the DOM
     document.body.innerHTML = `
       <div class="slider-item active"></div>
@@ -24,6 +21,7 @@ describe('Hero Slider Functionality', () => {
     prevBtn = document.querySelector('.prev');
     nextBtn = document.querySelector('.next');
 
+    // Mock the script's behavior
     let currentSlidePos = 0;
     let lastActiveSliderItem = heroSliderItems[0];
 
@@ -54,20 +52,14 @@ describe('Hero Slider Functionality', () => {
     nextBtn.addEventListener('click', slideNext);
     prevBtn.addEventListener('click', slidePrev);
 
-    // Define and call autoSlide just like the updated main code
-    const autoSlide = function () {
-      autoSlideInterval = setInterval(function () {
-        slideNext();
-      }, 7000);
-    };
+    autoSlideInterval = setInterval(slideNext, 7000);
 
     [prevBtn, nextBtn].forEach((btn) => {
       btn.addEventListener('mouseover', () => clearInterval(autoSlideInterval));
-      btn.addEventListener('mouseout', autoSlide);
+      btn.addEventListener('mouseout', () => {
+        autoSlideInterval = setInterval(slideNext, 7000);
+      });
     });
-
-    //? Call autoSlide directly (no load event needed)
-    autoSlide();
   });
 
   afterEach(() => {
@@ -118,16 +110,21 @@ describe('Hero Slider Functionality', () => {
   });
 
   test('slider auto-updates after interval', () => {
+    jest.useFakeTimers();
     jest.advanceTimersByTime(7000);
+
     expect(heroSliderItems[0].classList.contains('active')).toBe(false);
     expect(heroSliderItems[1].classList.contains('active')).toBe(true);
 
     jest.advanceTimersByTime(7000);
+
     expect(heroSliderItems[1].classList.contains('active')).toBe(false);
     expect(heroSliderItems[2].classList.contains('active')).toBe(true);
   });
 
   test('hovering over navigation buttons pauses auto slide', () => {
+    jest.useFakeTimers();
+
     fireEvent.mouseOver(nextBtn);
     jest.advanceTimersByTime(7000);
 

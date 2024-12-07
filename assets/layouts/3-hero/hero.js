@@ -6,10 +6,13 @@ const heroSliderPrevBtn = document.querySelector('.prev');
 const heroSliderNextBtn = document.querySelector('.next');
 
 let currentSlidePos = 0;
-let lastActiveSliderItem = heroSliderItems[0];
+
+let lastActiveSliderItem = null;
 
 const updateSliderPos = function () {
-  lastActiveSliderItem.classList.remove('active');
+  if (lastActiveSliderItem) {
+    lastActiveSliderItem.classList.remove('active');
+  }
   heroSliderItems[currentSlidePos].classList.add('active');
   lastActiveSliderItem = heroSliderItems[currentSlidePos];
 };
@@ -47,6 +50,7 @@ const addEventOnElementss = function (elements, eventType, callback) {
     elements[i].addEventListener(eventType, callback);
   }
 };
+
 let autoSlideInterval;
 const autoSlide = function () {
   autoSlideInterval = setInterval(function () {
