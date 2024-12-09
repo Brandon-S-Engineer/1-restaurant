@@ -1,63 +1,96 @@
 # Restaurant Web Showcase
 
-A fully responsive and visually captivating restaurant website built with **JavaScript** and **SCSS**. This project includes comprehensive testing with **Jest** (10 test cases) to ensure functionality and reliability. The website demonstrates modern web development practices, dynamic interactivity, and a user-friendly design.
+**Developed a fully responsive and visually captivating restaurant website** to showcase modern web development practices.  
+**Used JavaScript and SCSS** to create dynamic interactivity and a user-friendly design, validated by **10 Jest test cases** for functionality and reliability.
+
+---
 
 ## 🌐 Online Demo
 
-Explore the live demo of the project:  
-**[Live Demo](#)**
-Experience the responsiveness, interactivity, and polished UI firsthand.
+**[Live Demo](#)**  
+Explore the responsiveness, interactivity, and polished UI firsthand.
+
+---
 
 ## 🚀 Features
 
-- **Responsive Design**: Seamlessly adapts to different screen sizes using SCSS and media queries.
-- **Dynamic Components**: Built with vanilla JavaScript for a fast, lightweight experience.
-- **Comprehensive Testing**: 10 Jest test cases ensure a high-quality, bug-free application.
-- **Modern Layout**: Clean and intuitive sections, including Hero, Services, About, Menu, Testimonials, Reservations, and more.
-- **Preloader**: Enhances user experience with a sleek loading animation.
+**Designed an intuitive and responsive user experience**, featuring:
+
+- **Responsive Design**: Adaptable to all screen sizes using SCSS and media queries.
+- **Dynamic Components**: Built with vanilla JavaScript for fast performance.
+- **Comprehensive Testing**: 10 Jest test cases ensure a bug-free application.
+- **Modern Layout**: Includes Hero, Services, About, Menu, Testimonials, Reservations, and more.
+- **Preloader Animation**: Sleek loading animation enhances user experience.
+
+---
 
 ## 🛠️ Tech Stack
+
+**Leveraged industry-standard tools for performance and scalability**:
 
 - **Languages**: JavaScript, SCSS
 - **Testing**: Jest
 - **Tools**: Media Queries, Modular SCSS
 
+---
+
 ## 🧪 Testing
 
-This project includes **10 Jest test cases** to validate key functionalities and ensure a reliable user experience. The test suite focuses on:
+**Implemented 10 Jest test cases to ensure reliable functionality**, focusing on:
 
-- Component rendering
-- Functionality of dynamic sections
-- Error handling
+- Component rendering accuracy.
+- Dynamic section interactions.
+- Robust error handling.
+
+---
 
 ## 📂 File Structure
 
-The project follows a well-organized structure for maintainability and scalability:
+**Organized for maintainability and scalability**:
 
 ```
-├── src
-│   ├── components/
-│   ├── styles/
-│   ├── tests/
-│   ├── index.js
-│   └── ...
+├── assets
+│   ├── base/
+│   ├── colors/
+│   ├── dist/
+│   ├── images/
+│   ├── layouts/
+│       ├── 0-preload/
+│       ├── 1-topbar/
+│       ├── 2-header/
+│       ├── 3-hero/
+│       ├── 4-service/
+│       ├── 5-about/
+│       ├── 6-dish/
+│       ├── 7-menu/
+│       ├── 8-testimonials/
+│       ├── 9-reservation/
+│       ├── 10-features/
+│       ├── 11-event/
+│       └── 12-footer/
 ├── public/
 ├── package.json
 └── README.md
 ```
 
+---
+
 ## ✨ Highlights
 
-The website features several engaging and visually stunning sections, including:
+**Showcased critical sections to enhance user engagement and experience**:
 
 - **Hero Section**: A captivating introduction to the restaurant.
-- **Menu Section**: Dynamic and interactive menu for user engagement.
-- **Testimonials Section**: Highlights positive customer feedback.
-- **Reservations Section**: Enables easy table bookings.
-- **Footer**: Cleanly designed with essential information and links.
+- **Menu Section**: Interactive menu for user exploration.
+- **Testimonials Section**: Positive customer feedback showcased.
+- **Reservations Section**: Enables easy and user-friendly table bookings.
+- **Footer**: Cleanly designed with essential links and information.
+
+---
 
 ## 📬 Contact
 
-Feel free to reach out if you have questions or want to discuss the project further:  
-**Email**: [brandon.s.engineer@gmail.com](mailto:brandon.s.engineer@gmail.com)  
-**Portfolio**: [Link to Portfolio](#)
+**Reach out for inquiries or discussions**:
+
+- **Email**: [brandon.s.engineer@gmail.com](mailto:brandon.s.engineer@gmail.com)
+- **LinkedIn**: [Brandon I. Soria](https://www.linkedin.com/in/brandon-i-soria/)
+- **Portfolio**: [Link to Portfolio](#)
