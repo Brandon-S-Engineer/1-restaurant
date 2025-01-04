@@ -7,8 +7,10 @@
 
 ## 🌐 Online Demo
 
-**[Live Demo](#)**  
+**[Live Demo](https://1-restaurant.vercel.app/)**  
 Explore the responsiveness, interactivity, and polished UI firsthand.
+
+Here's how you can update the **Online Demo** section with the actual live link for your README:
 
 ---
 
@@ -93,4 +95,4 @@ Explore the responsiveness, interactivity, and polished UI firsthand.
 
 - **Email**: [brandon.s.engineer@gmail.com](mailto:brandon.s.engineer@gmail.com)
 - **LinkedIn**: [Brandon I. Soria](https://www.linkedin.com/in/brandon-i-soria/)
-- **Portfolio**: [Link to Portfolio](#)
+- **Portfolio**: [Link to Portfolio](https://www.brandon-s-engineer.com/)
